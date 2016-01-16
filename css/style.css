@@ -7,9 +7,10 @@ html {
 }
 
 body {
-	background-color: #FCF2E8
+	background-color: #FCF2E8;
 }
 
+/*Cover formatting*/
 .cover {
 	background-image:url('https://images.unsplash.com/photo-1444858345149-8ff40887589b?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1350');
 	background-repeat: no-repeat;
@@ -19,6 +20,7 @@ body {
 	margin-left:-0.35em;
 }
 
+/*Cover text*/
 .primary-heading,
 .secondary-heading,
 .third-level {
@@ -48,6 +50,7 @@ body {
 	margin-top:-1.2em;
 }
 
+/*Portfolio samples styling*/
 .portfolio {
 	padding-bottom:2em;
 }
@@ -62,6 +65,7 @@ body {
 .content .project > h3 {
 	font-family: 'Cabin', sans-serif;
 	font-size:1.4em;
+	color:#484243;
 }
 
 .content .project {
@@ -111,6 +115,7 @@ hr.style-four {
 
 .icons > li:hover {
 	cursor:pointer;
+	background-color:#484243;
 }
 
 .twitter {
@@ -135,4 +140,32 @@ hr.style-four {
 
 .copy:hover {
 	cursor:pointer;
+}
+
+@media only screen and (max-width: 650px) {
+
+	.cover {
+		height:20em;
+	}
+
+	.content .primary-heading {
+		font-size:2.4em;
+		padding-top:2.5em;
+	}
+
+	.content .secondary-heading {
+		font-size:1.9em;
+	}
+
+	.content .third-level {
+		font-size:1.5em;
+	}
+	
+	.portfolio .content > h2 {
+		font-size:2em;
+	}
+
+	.content .project {
+		margin-bottom:.1em;
+	}
 }
